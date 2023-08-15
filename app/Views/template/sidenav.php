@@ -3,8 +3,12 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div class="sb-sidenav-menu-heading">Core</div>
+                <a class="nav-link" href="<?= base_url('/') ?>">
+                    <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                    My Profile
+                </a>
                 <?php if(in_groups('admin')): ?>
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('admin/index') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     User List
                 </a>
